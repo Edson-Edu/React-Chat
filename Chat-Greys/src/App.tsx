@@ -1,36 +1,16 @@
-import "./App.css"
+import "./App.css" ;{/* import para a estilização */}
+import Message from "./Message" ; {/* import para a classe Message*/}
+import Input from "./Input-area"
 export default () => {
   return <>
-    <main>
-      <div className="Mensagem">
-        <div className="usuario">
-          Yasmin
-        </div>
-
-        <div className="texto">
-          Voce chorou com qual ep?
-        </div>
-      </div>
-
-      {/* dnv */}
-
-      <div className="Minha_Mensagem">
-        <div className="usuario">
-          Edson
-        </div>
-
-        <div className="Meu Texto">
-          Chorei com o episodio do tiroteio
-        </div>
-      </div>
-
-
+    <main> 
+      <Message self={true} date="04:20 2020/12/12" user="Edson" text="Oii, tudo bem?" /> {/* define um valor para todos os atribudos do componente Message */}
+      <Message self={false} date="04:21 2020/12/12" user="Yasmin" text="Oiie" />
+      <Message self={false} date="04:22 2020/12/12" user="Yasmin" text="tudo sim e vc??" />
+      <Message self={true} date="04:23 2020/12/12" user="Edson" text="não:(" />
     </main>
-
     <div className="input-area">
-      <input type="text" placeholder="Digite sua Mensagem: " />
-      <button type="submit">Enviar</button>
+      <Input />
     </div>
   </>
 }
-
