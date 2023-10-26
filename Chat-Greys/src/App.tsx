@@ -11,6 +11,7 @@ export default () => {
     </main>
     <div className="input-area">
       <Input />
+      
     </div>
   </>
 }
