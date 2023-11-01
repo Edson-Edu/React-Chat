@@ -10,6 +10,7 @@ export default function (props: Props) {
       {self: false, date: "04:23 2020/12/12", user: "Yasmin", text: "tchau leeh"}
     ]
     setMensagem(novaListaDeMensagens)
+    
   }
 
     return <>
