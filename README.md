@@ -1,2 +1,2 @@
 # React-Chat
- Chat para os Apaixonados por Grewy's Anatomy!
+ Chat para os Apaixonados por Grey's Anatomy!
