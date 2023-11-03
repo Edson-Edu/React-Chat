@@ -9,8 +9,9 @@ export default () => {
     { self: true, date: "04:22 2020/12/12", user: "Edson", text: "Tchau" },
     { self: false, date: "04:23 2020/12/12", user: "Leticia", text: "Oiie" },
   ])
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const scroll1 = () => {
+    if(messagesEndRef.current)
     messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
   };
   return <>
