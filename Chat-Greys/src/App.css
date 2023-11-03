@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
+  background-image: url('greysfundo.jpg');
+  background-size: cover;
+  background-position: -20px;
+  
 }
 
 main {
-  border: 2px solid salmon;
+  border: 2px solid #2D3968;
   height: 90vh;
   padding: 1.5rem;
   display: flex;
@@ -20,36 +23,40 @@ main {
 .input-area {
   display: flex;
   height: 10vh;
-  
 }
 
-.input-area  textarea {
+.input-area textarea {
   flex-grow: 1;
-  
+  background-color: transparent;
+  border: none;
 }
 
-.message {
-  border: 2px solid green;
-  width: 50%;
+.message { /* todas as mensagens */
+  border: 2.5px solid #303D60;
+  width: 35%;
   padding: 1rem;
+  background-color: #A6B9B3; 
 }
 
-.message.self {
+.message.self { /* mensagem do usuario */
   align-self: flex-end;
-  background-color: lightgreen;
-} 
+  background-color: #405574; /* Cor mais clara para as mensagens do usuário "self" */
+  color: white; /* Texto das mensagens do usuário "self" em branco */
+}
 
 .message .user {
-  background-color: black;
-  font-size: .8em;
-  color: white;
-  padding: .25em 1em;
+  background-color: #303D60; /* Cor do nome do user*/
+  font-size: 0.8em;
+  color: white; /* Texto das mensagens do usuário em branco */
+  padding: 0.25em 1em;
   display: inline-block;
   border-radius: 5px;
 }
 
 .message .date {
-  font-size: .6em;
-  padding: 0 .5em;
+  font-size: 0.6em;
+  padding: 0.25em 1em;
   margin-block: 1rem;
+  color: white;
+  border-radius: 5px;
 }
